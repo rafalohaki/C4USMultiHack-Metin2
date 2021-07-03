@@ -29,8 +29,8 @@ jobs:
       uses: actions/cache@v2
       id: cache-directx
       with:
-        path: DXSDK_Jun10.exe
-        key: ${{ runner.os }}-DXSDK_Jun10
+        path: DX8a_SDK.exe
+        key: ${{ runner.os }}-DX8a_SDK
     - name: Download DirectX SDK
       run: curl -L --silent --show-error --output DXSDK_Jun10.exe https://archive.org/download/dx8a_sdk/DX8a_SDK.exe
     - name: Install DirectX SDK
